@@ -18,10 +18,10 @@ Plugin 'scrooloose/nerdtree'
 
 
 "Programming assisting plugins
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 Plugin 'Raimondi/delimitMate'
 Plugin 'honza/vim-snippets'
-Plugin 'luochen1990/rainbow'
+"Plugin 'luochen1990/rainbow'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-surround'
@@ -31,7 +31,7 @@ Plugin 'Shougo/vimshell.vim'
 
 
 "Enhancement on status bar
-"Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline'
 "Plugin 'vim-airline/vim-airline-themes'
 
 "Parentheses highlight
