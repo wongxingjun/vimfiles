@@ -4,6 +4,9 @@ set tabstop=4
 set softtabstop=4
 set expandtab
 
+"Make backspace acts as it should do
+set backspace=eol,start,indent
+
 set smarttab
 set smartindent
 set autoindent
@@ -34,7 +37,7 @@ set ruler
 set cmdheight=2
 
 "A buffer becomes hidden when it is abanoned
-set hid
+set hidden
 
 "When search try to be smart about cases
 set smartcase
@@ -81,13 +84,19 @@ set shortmess=atI
 colorscheme monokai
 
 autocmd InsertEnter * se cul
-set ruler
+
+"Display current command input
 set showcmd
 
+"Display current mode
+set showmode
 
-"set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}   
+
+set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}   
 set laststatus=2    
  
 "No vi 
-set nocompatible 
+set nocompatible
+
+set title
 
