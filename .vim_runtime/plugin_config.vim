@@ -139,5 +139,9 @@ let g:NERDSpaceDelims=1
 let g:NERDAltDelims_python = 1
 
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-airline-theme
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:airline_theme='molokai'
 
 
