@@ -18,7 +18,8 @@ Plugin 'scrooloose/nerdtree'
 
 
 "Programming assisting plugins
-"Plugin 'Valloric/YouCompleteMe'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'rdnetto/YCM-Generator'
 Plugin 'Raimondi/delimitMate'
 Plugin 'honza/vim-snippets'
 "Plugin 'luochen1990/rainbow'
