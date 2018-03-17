@@ -81,6 +81,9 @@ set cul
 set cuc
 set shortmess=atI
 
+"Fix edit line
+set so=20
+
 colorscheme monokai
 
 autocmd InsertEnter * se cul
