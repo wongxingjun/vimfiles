@@ -34,7 +34,7 @@ set autoread
 set ruler
 
 "Height of command bar
-set cmdheight=2
+set cmdheight=1
 
 "A buffer becomes hidden when it is abanoned
 set hidden
@@ -100,3 +100,4 @@ set nocompatible
 
 set title
 
+set so=20
