@@ -18,7 +18,7 @@ func SetTitle()
 	    call append(line(".")+1, "")
 	else 
 		call setline(1, "/*************************************************************************") 
-		call append(line("."), "	> File Name: ".expand("%")) 
+		call append(line("."),   "	> File Name: ".expand("%")) 
 		call append(line(".")+1, "	> Author: ") 
 		call append(line(".")+2, "	> Mail: ") 
 		call append(line(".")+3, "	> Created Time: ".strftime("%c")) 
@@ -35,8 +35,8 @@ func SetTitle()
 		call append(line(".")+7, "")
 	endif
 	if expand("%:e") == 'h'
-		call append(line(".")+6, "#ifndef _".toupper(expand("%:r"))."_H")
-		call append(line(".")+7, "#define _".toupper(expand("%:r"))."_H")
+		call append(line(".")+6, "#ifndef __".toupper(expand("%:r"))."_H__")
+		call append(line(".")+7, "#define __".toupper(expand("%:r"))."_H__")
 		call append(line(".")+8, "#endif")
 	endif
 	if &filetype == 'java'
