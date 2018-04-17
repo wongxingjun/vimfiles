@@ -83,3 +83,8 @@ func! Rungdb()
 	exec "!gdb ./%<"
 endfunc
 
+"Jump to the line edited last time.
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
+    \| exe "normal! g'\"" | endif
+endif
