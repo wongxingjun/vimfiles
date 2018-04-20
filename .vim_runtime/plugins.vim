@@ -1,54 +1,51 @@
-"Set Plugin as plugin manager
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
+"Set Plug as plugin manager
+call plug#begin('~/.vim/plugged')
 
 "Git
-Plugin 'tpope/vim-fugitive'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'mattn/gist-vim'
-Plugin 'easymotion/vim-easymotion'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'mattn/gist-vim'
+Plug 'easymotion/vim-easymotion'
 
 "File search
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'tacahiroy/ctrlp-funky'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'tacahiroy/ctrlp-funky'
 
 "Directory tree
-Plugin 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree'
 
 
 "Programming assisting plugins
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'rdnetto/YCM-Generator'
-Plugin 'Raimondi/delimitMate'
-Plugin 'honza/vim-snippets'
-"Plugin 'luochen1990/rainbow'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'scrooloose/syntastic'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-repeat'
-Plugin 'majutsushi/tagbar'
-Plugin 'Shougo/vimshell.vim'
+Plug 'Valloric/YouCompleteMe'
+Plug 'rdnetto/YCM-Generator'
+Plug 'Raimondi/delimitMate'
+Plug 'honza/vim-snippets'
+"Plug 'luochen1990/rainbow'
+Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/syntastic'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
+Plug 'majutsushi/tagbar'
+Plug 'Shougo/vimshell.vim'
 
 
 "Enhancement on status bar
-Plugin 'vim-airline/vim-airline'
-"Plugin 'vim-airline/vim-airline-themes'
+Plug 'vim-airline/vim-airline'
+"Plug 'vim-airline/vim-airline-themes'
 
 "Parentheses highlight
-Plugin 'kien/rainbow_parentheses.vim'
+Plug 'kien/rainbow_parentheses.vim'
 
 "Colorscheme
-Plugin 'tomasr/molokai'
+Plug 'tomasr/molokai'
 
 "Tmux
-Plugin 'christoomey/vim-tmux-navigator'
+Plug 'christoomey/vim-tmux-navigator'
 
 "Edit
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'sjl/gundo.vim'
-Plugin 'unblevable/quick-scope'
-Plugin 'terryma/vim-expand-region'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'sjl/gundo.vim'
+Plug 'unblevable/quick-scope'
+Plug 'terryma/vim-expand-region'
 
-
-call vundle#end()
+call plug#end()
