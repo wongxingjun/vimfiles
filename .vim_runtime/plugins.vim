@@ -48,4 +48,7 @@ Plug 'sjl/gundo.vim'
 Plug 'unblevable/quick-scope'
 Plug 'terryma/vim-expand-region'
 
+"Golang
+Plug 'fatih/vim-go'
+
 call plug#end()
