@@ -6,11 +6,6 @@
 "_______________________________________________________________________________
 " Configurations for Vundle, BEGIN.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-"Support newer python version
-let g:python_host_prog = "/usr/local/bin/python"
-
-
 " Pre-requests.
 set nocompatible
 filetype off
@@ -27,8 +22,7 @@ Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 
 " Visual optimization.
-"Plugin 'altercation/vim-colors-solarized' " Solarized scheme.
-colorscheme monokai
+Plugin 'altercation/vim-colors-solarized' " Solarized scheme.
 Plugin 'bling/vim-bufferline'             " Add buffer info to status bar.
 Plugin 'vim-airline/vim-airline'          " Vim Airline status bar.
 Plugin 'vim-airline/vim-airline-themes'   " Themes for Airline.
@@ -58,12 +52,12 @@ Plugin 'w0rp/ale'  " ALE linter framework.
 
 " Language specific plugins.
 " Text writing.
-"Plugin 'kana/vim-textobj-user'
-"Plugin 'kana/vim-textobj-indent'
-"Plugin 'reedes/vim-litecorrect'
-"Plugin 'reedes/vim-textobj-sentence'
-"Plugin 'reedes/vim-textobj-quote'
-"Plugin 'reedes/vim-wordy'
+Plugin 'kana/vim-textobj-user'
+Plugin 'kana/vim-textobj-indent'
+Plugin 'reedes/vim-litecorrect'
+Plugin 'reedes/vim-textobj-sentence'
+Plugin 'reedes/vim-textobj-quote'
+Plugin 'reedes/vim-wordy'
 Plugin 'godlygeek/tabular'           " Quick formatting tabular.
 Plugin 'tpope/vim-markdown'          " Markdown support.
 
@@ -74,8 +68,8 @@ Plugin 'nvie/vim-flake8'     " Static analytics.
 Plugin 'python_match.vim'    " Enhance if-else's % motion in Python.
 
 " Javascript
-"Plugin 'pangloss/vim-javascript' " Basic config. for JS.
-"Plugin 'briancollins/vim-jst'    " High-light and indenting for JST/EJS.
+Plugin 'pangloss/vim-javascript' " Basic config. for JS.
+Plugin 'briancollins/vim-jst'    " High-light and indenting for JST/EJS.
 Plugin 'elzr/vim-json'           " JSON support.
 
 " Golang
@@ -115,14 +109,15 @@ set linespace=0                 " No extra spaces between rows.
 set hlsearch                    " High-light search terms.
 set winminheight=0              " Windows can be 0 line high.
 set list                        " Make whitespace visible.
+set listchars=tab:›\ ,trail:•,extends:#,nbsp:. " Show problematic whitespace.
 
 " Use solarized color scheme.
-"if filereadable(expand("~/.config/nvim/colors/solarized.vim"))
-"    let g:solarized_termtrans=1
-"    let g:solarized_contrast="normal"
-"    let g:solarized_visibility="normal"
-"    colorscheme solarized
-"endif
+if filereadable(expand("~/.config/nvim/colors/solarized.vim"))
+    let g:solarized_termtrans=1
+    let g:solarized_contrast="normal"
+    let g:solarized_visibility="normal"
+    colorscheme solarized
+endif
 
 
 " Formatting configurations.
@@ -203,7 +198,7 @@ nnoremap Y y$
 scriptencoding utf-8      " Set encoding to UTF-8.
 filetype plugin indent on " Automatically detect file types.
 syntax on                 " Enable syntax high-lighting.
-"set spell                 " Enable spell checking.
+set spell                 " Enable spell checking.
 set iskeyword-=.           " Treat '.' as the end of a word.
 set iskeyword-=#           " Treat '#' as the end of a word.
 set iskeyword-=-           " Treat '-' as the end of a word.
